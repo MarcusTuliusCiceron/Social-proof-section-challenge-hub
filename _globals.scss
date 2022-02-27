@@ -14,5 +14,10 @@ main{
     background-image: url(/images/bg-pattern-top-mobile.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 1.5625rem;
+    margin: min(1.5625rem);
+    margin-top: 0;
+    padding-top: 1.5625rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
