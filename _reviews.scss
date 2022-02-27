@@ -1,0 +1,38 @@
+.review{
+    &__item{
+        background-color: $veryDarkMagenta;
+        color: $white;
+        padding: 2rem;
+        border-radius: 9px;
+        height: 15.625rem;
+        &:not(:last-child){
+            margin-bottom: 1.0625rem;
+        }
+        img{
+            border-radius: 50%;
+            margin-bottom: 1.4375rem;
+            margin-right: 1.4375rem;
+            height: 46px;
+            width: 46px;
+        }
+        &__header{
+            display: flex;
+            &__text{
+                h2{
+                    font-size: 1.0625rem;
+                    margin-bottom: .3125rem;
+                }
+                h3{
+                    color: $softPink;
+                    font-weight: 400;
+                    font-size: 1rem;
+                }
+            }
+        }
+        p{
+            font-size: .85rem;
+            line-height: 1.7;
+            font-weight: 500;
+        }
+    }
+}

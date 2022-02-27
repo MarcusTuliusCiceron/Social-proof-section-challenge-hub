@@ -72,4 +72,47 @@ header .rates .star {
 header .rates .star img:not(:last-child) {
   margin-right: 10px;
 }
+
+.review__item {
+  background-color: #502050;
+  color: white;
+  padding: 2rem;
+  border-radius: 9px;
+  height: 15.625rem;
+}
+
+.review__item:not(:last-child) {
+  margin-bottom: 1.0625rem;
+}
+
+.review__item img {
+  border-radius: 50%;
+  margin-bottom: 1.4375rem;
+  margin-right: 1.4375rem;
+  height: 46px;
+  width: 46px;
+}
+
+.review__item__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.review__item__header__text h2 {
+  font-size: 1.0625rem;
+  margin-bottom: .3125rem;
+}
+
+.review__item__header__text h3 {
+  color: #ee68a4;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.review__item p {
+  font-size: .85rem;
+  line-height: 1.7;
+  font-weight: 500;
+}
 /*# sourceMappingURL=style.css.map */
