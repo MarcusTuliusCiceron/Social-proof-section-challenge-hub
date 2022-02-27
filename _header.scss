@@ -1,0 +1,44 @@
+header{
+    margin-bottom: 3.125rem;
+    .infos{
+        text-align: center;
+        margin-bottom: 2.8125rem;
+        h1{
+            color: $veryDarkMagenta;
+            padding: 0 2.1875rem;
+            padding-top: 2.8125rem;
+            padding-bottom: 1.5625rem;
+            
+        }
+        h2{
+            font-size: 0.95rem;
+            color: $darkGrayishMagenta;
+            font-weight: 400;
+        }
+    }
+    .rates{
+        &__1, &__2{
+            margin-bottom: 15px;
+        }
+        &__1, &__2, &__3{
+            background-color: $lightGrayishMagenta;
+            padding: 17px 60px;
+            border-radius: 4px;
+            p{
+                text-align: center;
+                color: $veryDarkMagenta;
+                font-weight: 700;
+                font-size: 13px;
+            }
+        }
+        .star{
+            display: flex;
+            justify-content: center;
+            margin-bottom: .8125rem;
+            img:not(:last-child){
+                margin-right: 10px;
+            }
+        }
+    }
+    
+}
