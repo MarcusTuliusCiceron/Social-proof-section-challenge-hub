@@ -20,4 +20,11 @@ main{
     display: flex;
     flex-direction: column;
     align-content: center;
+    @include breakpoint-up(large){
+        background-image: url(/images/bg-pattern-top-mobile.svg);
+        background-position: top left;
+        background-size: auto;
+        margin: 0;
+        padding: 0;
+    }
 }

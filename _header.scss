@@ -2,14 +2,41 @@ header{
     margin-bottom: 3.125rem;
     max-width: 25rem;
     align-self: center;
+    @include breakpoint-up(large){
+        display: flex;
+        justify-content: space-between;
+        max-width: 1400px;
+        width: 69.375rem; 
+        margin-top: 7.8125rem;
+        margin-bottom: 74px;
+
+    }
     .infos{
         text-align: center;
         margin-bottom: 2.8125rem;
+        @include breakpoint-up(large){
+            display: flex;
+            max-width: 26.875rem;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            
+            //margin-right: 8.4375rem;
+            margin-bottom: 0;
+        }
         h1{
             color: $veryDarkMagenta;
             padding: 0 2.1875rem;
             padding-top: 2.8125rem;
             padding-bottom: 1.5625rem;
+            @include breakpoint-up(large){
+                padding: 0;
+                font-size: 2.8125rem;
+                font-weight: 700;
+                line-height: 1;
+                margin-bottom: .8125rem;
+        
+            }
             
         }
         h2{
@@ -19,26 +46,51 @@ header{
         }
     }
     .rates{
+
+        
         &__1, &__2{
             margin-bottom: 15px;
+            
         }
         &__1, &__2, &__3{
             background-color: $lightGrayishMagenta;
             padding: 17px 60px;
             border-radius: 4px;
+            @include breakpoint-up(large){
+                display: flex;
+                width: 440px;
+                padding: 14px 30px;
+                
+            }
             p{
                 text-align: center;
                 color: $veryDarkMagenta;
                 font-weight: 700;
                 font-size: 13px;
+                @include breakpoint-up(large){
+                    margin-left: 30px;
+                }
             }
         }
         .star{
             display: flex;
             justify-content: center;
             margin-bottom: .8125rem;
+            @include breakpoint-up(large){
+                margin-bottom: 0;
+            }
             img:not(:last-child){
                 margin-right: 10px;
+            }
+        }
+        &__2{
+            @include breakpoint-up(large){
+                margin-left: 47px;
+            }
+        }
+        &__3{
+            @include breakpoint-up(large){
+                margin-left: 94px;
             }
         }
     }

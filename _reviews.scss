@@ -1,6 +1,9 @@
 .review{
     margin-bottom: 6.25rem;
     align-self: center;
+    @include breakpoint-up(large){
+        display: flex; 
+    }
     &__item{
         background-color: $veryDarkMagenta;
         color: $white;
@@ -8,9 +11,25 @@
         border-radius: 9px;
         height: 15.625rem;
         max-width: 25rem;
+        @include breakpoint-up(large){
+            max-width: 350px;
+
+        }
         
         &:not(:last-child){
             margin-bottom: 1.0625rem;
+            @include breakpoint-up(large){
+                margin-bottom: 0;
+                margin-right: 30px;
+            }
+        }
+        &__2{
+            @include breakpoint-up(large){
+                margin-top: 15px;
+            }
+        }
+        &__3{
+            margin-top: 30px;
         }
         img{
             border-radius: 50%;
